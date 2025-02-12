@@ -1,6 +1,8 @@
 const jwt = require("jsonwebtoken");
 const { TOKEN_SECRET } = require("../config");
 
+
+//creacion del token 
 function createAccesToken(payload) {
     return new Promise((resolve, reject) => {   // no olvidar el return   
         jwt.sign( 

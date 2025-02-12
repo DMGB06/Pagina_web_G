@@ -3,7 +3,6 @@ const bcrypt = require("bcryptjs");
 const { search, trace } = require("../routes/user.routes");
 
 // obtener todos los usuarios
-
 const getusers = async (req, res) => {
     try {
         const user = await User.find().select("-password")
