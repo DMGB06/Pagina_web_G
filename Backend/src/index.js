@@ -11,6 +11,7 @@ const port = process.env.PORT || 3000;
 const authRoutes = require("./routes/auth.routes.js");
 const userRoutes = require("./routes/user.routes.js")
 const membershipTypesRoutes = require("./routes/membershipType.routes.js")
+const memberships = require("./routes/membership.routes.js")
 
 app.use(cookieParser()); // Necesario para leer las cookies
 app.use(express.json()); // Necesario para recibir JSON en las peticiones
@@ -24,6 +25,7 @@ app.use(cors({
 app.use("/api", authRoutes); // Ahora Express sabe que existen estas rutas
 app.use("/api", userRoutes);
 app.use("/api",membershipTypesRoutes);
+app.use("/api", memberships)
 
 /*-- Connection Database -- */
 mongoose

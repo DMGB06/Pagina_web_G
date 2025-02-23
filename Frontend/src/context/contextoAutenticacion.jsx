@@ -5,7 +5,7 @@ import Cookies from "js-cookie";
 export const AuthContext = createContext();
 
 export const useAuth = () => {
-  const context = useContext(AuthContext);
+  const context = useContext(AuthContext);    
   if (!context) {
     throw new Error("useAuth must be used within an AuthProvider");
   }
@@ -74,7 +74,7 @@ export const AuthProvider = ({ children }) => {
         if (!res.data) {
           setIsAuthenticated(false);
           setLoading(false);
-          return; // IMPORTANTE: Cortar la ejecución aquí
+          return; // IMPORTANTE: Cortar la ejecución aquí xd
         }
   
         setIsAuthenticated(true);

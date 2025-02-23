@@ -37,7 +37,7 @@ const LoginPage = () => {
       {/* Contenedor del formulario con efecto vidrio translúcido */}
       <div className="flex items-center justify-end h-full pr-16">
         <div className="bg-white bg-opacity-50 backdrop-blur-lg p-8 rounded-2xl  w-96">
-          <h2 className="text-white text-2xl font-bold text-left mb-4 text-center ">
+          <h2 className="text-white text-2xl font-bold text-left mb-4 text-center">
             LOGIN
           </h2>
 
@@ -129,7 +129,7 @@ const LoginPage = () => {
 
             <button
               type="submit"
-              className="w-full bg-red-600 text-white font-bold py-3 mt-4 rounded-md hover:bg-red-900 transition-all duration-300 transform hover:scale-105 active:scale-95"
+              className="w-full bg-red-600 text-white font-bold py-3 mt-4 rounded-md hover:bg-red-500 transition-all duration-300 transform hover:scale-105 active:scale-95"
             >
               Login
             </button>

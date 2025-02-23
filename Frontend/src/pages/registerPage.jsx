@@ -101,7 +101,7 @@ const RegisterPage = () => {
               {/* Sign Up Button */}
               <button
                 type="submit"
-                className="w-full bg-red-600 text-white font-bold py-3 mt-4 rounded-md hover:bg-red-900 transition-all duration-300 transform hover:scale-105 active:scale-95"
+                className="w-full bg-red-600 text-white font-bold py-3 mt-4 rounded-md hover:bg-red-500 transition-all duration-300 transform hover:scale-105 active:scale-95"
               >
                 Sign up
               </button>
